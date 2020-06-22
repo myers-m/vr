@@ -715,6 +715,7 @@ public class WaveVR_ControllerLoader : MonoBehaviour {
 			SetControllerBeamParameters (originalControllerPrefab);
 			SetControllerPointerParameters (originalControllerPrefab);
 			controllerPrefab = Instantiate(originalControllerPrefab);
+			shuju.instance.controller = controllerPrefab;
 			controllerPrefab.transform.parent = this.transform.parent;
 			ApplyIndicatorParameters();
 

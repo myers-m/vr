@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: moon
-  m_Shader: {fileID: 4800000, guid: 66661dced810241d1915b8f6415fd66d, type: 3}
-  m_ShaderKeywords: GLOW11_GLOW_MAINTEX GLOW11_MULTIPLY_OFF _METALLICGLOSSMAP _NORMALMAP
-    _PARALLAXMAP
+  m_Shader: {fileID: 4800000, guid: 58d9f30ea0b2ab746be089e1543dc25d, type: 3}
+  m_ShaderKeywords: GLOW11_GLOW_MAINTEX GLOW11_MULTIPLY_MAINTEX_ALPHA _METALLICGLOSSMAP
+    _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22,6 +22,10 @@ Material:
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: c3d66a8056f9db345b1ea380aa7e815d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail:
+        m_Texture: {fileID: 2800000, guid: e39671df4e01d445ab22eff01e83e247, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -60,24 +64,32 @@ Material:
         m_Texture: {fileID: 2800000, guid: 830884c18cf5e7a4895ee02c2dcd8e12, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OutlineColor:
+        m_Texture: {fileID: 2800000, guid: 5f22317a1cf89a9419b9d77b84e695f8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 2800000, guid: 830884c18cf5e7a4895ee02c2dcd8e12, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _A: 0.666
     - _BumpScale: 0.1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionLM: 0
+    - _Gloss: 43
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GlowStrength: 1
     - _InvFade: 1.1
+    - _Light: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineLength: 2.17
     - _Parallax: 0.02
     - _Shininess: 1
     - _SmoothnessTextureChannel: 0
@@ -85,10 +97,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - _otherset: 1
     m_Colors:
-    - _Color: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Diffuse: {r: 0.9811321, g: 0.9811321, b: 0.61552155, a: 1}
     - _EmisColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Specular: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 0.5}
